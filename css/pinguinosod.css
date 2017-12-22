@@ -7,36 +7,36 @@ body {
 
 @media all and (max-width: 1690px) { 
 	body {	
-		padding-left:300px;
-		padding-right:300px;	
+		padding-left:320px;
+		padding-right:320px;	
 	}
 }
 
 @media all and (max-width: 1280px) { 
 	body {	
-		padding-left:200px;
-		padding-right:200px;	
+		padding-left:230px;
+		padding-right:230px;
 	}
 }
 
 @media all and (max-width: 980px) {
 	body {	
-		padding-left:130px;
-		padding-right:130px;	
+		padding-left:140px;
+		padding-right:140px;	
 	}
 }
 
 @media all and (max-width: 736px) {
 	body {	
-		padding-left:80px;
-		padding-right:80px;	
+		padding-left:60px;
+		padding-right:60px;
 	}
 }
 
 @media all and (max-width: 480px) {
 	body {	
-		padding-left:10px;
-		padding-right:10px;	
+		padding-left:0px;
+		padding-right:0px;
 	}
 }
 
