@@ -46,6 +46,7 @@ div.container {
 	border-left: 1px solid #90a0c0;
 	border-right: 1px solid #90a0c0;
 	background-color: #b7d7f7;
+	padding:10px;
 }
 
 div.profile-info {
@@ -64,5 +65,9 @@ div.profile-info {
 
 .profile-info ul{
 	list-style-type: none;
-	padding-left:10px;
+	padding-left:0px;
+}
+
+.profile-content p {
+	text-align: justify;
 }
