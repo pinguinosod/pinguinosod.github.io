@@ -1,6 +1,68 @@
 /* custom CSS for my personal website */
 body {
-	background-color: #bdf;
+	background-color: #b0d0f0;
 	color: #222;
 	font-family: sans-serif;
+}
+
+@media all and (max-width: 1690px) { 
+	body {	
+		padding-left:300px;
+		padding-right:300px;	
+	}
+}
+
+@media all and (max-width: 1280px) { 
+	body {	
+		padding-left:200px;
+		padding-right:200px;	
+	}
+}
+
+@media all and (max-width: 980px) {
+	body {	
+		padding-left:130px;
+		padding-right:130px;	
+	}
+}
+
+@media all and (max-width: 736px) {
+	body {	
+		padding-left:80px;
+		padding-right:80px;	
+	}
+}
+
+@media all and (max-width: 480px) {
+	body {	
+		padding-left:10px;
+		padding-right:10px;	
+	}
+}
+
+
+div.container {
+	height:100vh;
+	border-left: 1px solid #90a0c0;
+	border-right: 1px solid #90a0c0;
+	background-color: #b7d7f7;
+}
+
+div.profile-info {
+}
+
+.profile-info h1 {
+	text-align: center;
+	margin: 0px;
+}
+
+.profile-info h3 {
+	text-align: center;
+	margin: 0px;
+	font-weight:normal;
+}
+
+.profile-info ul{
+	list-style-type: none;
+	padding-left:10px;
 }
