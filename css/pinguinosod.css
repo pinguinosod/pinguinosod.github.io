@@ -45,7 +45,7 @@ body {
 
 @media all and (max-width: 418px) {
 	body {
-		background-color: #e8b8ed;
+		background-color: #ebd5ed;
 	}
 
 	div.container {
@@ -87,7 +87,7 @@ div.container {
 	/*min-height: calc(100vh - 90px);*/
 	/*border-left: 1px solid #90a0c0;
 	border-right: 1px solid #90a0c0;*/
-	background-color: #e8b8ed;
+	background-color: #ebd5ed;
 	padding-top:5px;
 	padding-bottom:5px;
 	padding-left:5px;
