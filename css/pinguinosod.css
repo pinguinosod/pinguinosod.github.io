@@ -1,6 +1,6 @@
 /* custom CSS for my personal website */
 body {
-	background-color: #74007f;
+	background-color: #5d007f;
 	color: #222;
 	font-family: sans-serif;
 	text-align:center;
@@ -45,7 +45,7 @@ body {
 
 @media all and (max-width: 418px) {
 	body {
-		background-color: #ebd5ed;
+		background-color: #c6b8ed;
 	}
 
 	div.container {
@@ -70,7 +70,7 @@ body {
 	text-align: center;
 	margin: 0px;
 	color : #ff6201;
-	background-color: #74007f;
+	background-color: #66007f;
 	/*border-radius: 5px;*/
 	padding-top:15px;
 	padding-bottom:15px;
@@ -87,7 +87,7 @@ div.container {
 	/*min-height: calc(100vh - 90px);*/
 	/*border-left: 1px solid #90a0c0;
 	border-right: 1px solid #90a0c0;*/
-	background-color: #ebd5ed;
+	background-color: #c6b8ed;
 	padding-top:5px;
 	padding-bottom:5px;
 	padding-left:5px;
