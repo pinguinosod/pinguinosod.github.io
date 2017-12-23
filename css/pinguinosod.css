@@ -1,18 +1,18 @@
 /* custom CSS for my personal website */
 body {
-	background-color: #b0d0f0;
+	background-color: #66007f;
 	color: #222;
 	font-family: sans-serif;
 	text-align:center;
 }
 
-@media all and (min-width: 1339px) { 
+@media all and (min-width: 1081px) { 
 	div.container {
-		width: 1300px;
+		width: 1000px;
 	}
 }
 
-@media all and (max-width: 1338px) { 
+@media all and (max-width: 1080px) { 
 	div.container {
 		width: 700px;
 	}
@@ -26,8 +26,7 @@ body {
 
 @media all and (max-width: 480px) {
 	body {
-		padding:10px;
-		background-color: #b7d7f7;
+		background-color: #b8c8ed;
 	}
 
 	div.container {
@@ -40,11 +39,14 @@ body {
 
 
 div.container {
-	height:100vh;
-	border-left: 1px solid #90a0c0;
-	border-right: 1px solid #90a0c0;
-	background-color: #b7d7f7;
-	padding:10px;
+	height: calc(100vh - 40px);
+	/*border-left: 1px solid #90a0c0;
+	border-right: 1px solid #90a0c0;*/
+	background-color: #b8c8ed;
+	padding-top:30px;
+	padding-bottom:10px;
+	padding-left:0px;
+	padding-right:0px;
 	margin:auto;
 	text-align:left;
 }
@@ -55,19 +57,27 @@ div.profile-info {
 .profile-info h1 {
 	text-align: center;
 	margin: 0px;
-}
-
-.profile-info h3 {
-	text-align: center;
-	margin: 0px;
-	font-weight:normal;
+	color : #ff6201;
+	background-color: #66007f;
+	/*border-radius: 5px;*/
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left:0px;
+	padding-right:0px;
+	/*
+	border-top:2px solid #bbacc1;
+	border-bottom:2px solid #bbacc1;
+	*/
 }
 
 .profile-info ul{
 	list-style-type: none;
-	padding-left:0px;
+	padding-left:10px;
+	padding-right:10px;
 }
 
 .profile-content p {
 	text-align: justify;
+	padding-left:10px;
+	padding-right:10px;
 }
