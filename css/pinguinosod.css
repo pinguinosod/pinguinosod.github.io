@@ -11,22 +11,14 @@ body {
 	margin: 0px;
 	color : #ff6201;
 	background-color: #5d007f;
-	/*border-radius: 5px;*/
 	padding-top:15px;
 	padding-bottom:15px;
 	padding-left:0px;
 	padding-right:0px;
-	/*
-	border-top:2px solid #bbacc1;
-	border-bottom:2px solid #bbacc1;
-	*/
 	height: 50px;
 }
 
 div.container {
-	/*min-height: calc(100vh - 90px);*/
-	/*border-left: 1px solid #90a0c0;
-	border-right: 1px solid #90a0c0;*/
 	background-color: #c6b8ed;
 	padding-top:5px;
 	padding-bottom:5px;
@@ -34,8 +26,6 @@ div.container {
 	padding-right:5px;
 	margin:auto;
 	text-align:left;
-	/*border-top-right-radius: 10px;
-	border-top-left-radius: 10px;*/
 	border-radius: 10px;
 }
 
