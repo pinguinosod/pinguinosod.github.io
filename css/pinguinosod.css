@@ -78,23 +78,8 @@ body {
 }
 
 
-div.container {
-	height: calc(100vh - 40px);
-	/*border-left: 1px solid #90a0c0;
-	border-right: 1px solid #90a0c0;*/
-	background-color: #b8c8ed;
-	padding-top:30px;
-	padding-bottom:10px;
-	padding-left:0px;
-	padding-right:0px;
-	margin:auto;
-	text-align:left;
-}
 
-div.profile-info {
-}
-
-.profile-info h1 {
+.top-banner h1 {
 	text-align: center;
 	margin: 0px;
 	color : #ff6201;
@@ -108,12 +93,31 @@ div.profile-info {
 	border-top:2px solid #bbacc1;
 	border-bottom:2px solid #bbacc1;
 	*/
+	height: 50px;
 }
 
-.profile-info ul{
-	list-style-type: none;
+div.container {
+	height: calc(100vh - 90px);
+	/*border-left: 1px solid #90a0c0;
+	border-right: 1px solid #90a0c0;*/
+	background-color: #b8c8ed;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:5px;
+	padding-right:5px;
+	margin:auto;
+	text-align:left;
+}
+
+div.profile-info {
 	padding-left:10px;
 	padding-right:10px;
+}
+
+.profile-info ul {
+	list-style-type: none;
+	padding-left:0px;
+	padding-right:0px;
 }
 
 .profile-content p {
