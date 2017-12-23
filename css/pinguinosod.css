@@ -97,7 +97,7 @@ body {
 }
 
 div.container {
-	height: calc(100vh - 90px);
+	/*min-height: calc(100vh - 90px);*/
 	/*border-left: 1px solid #90a0c0;
 	border-right: 1px solid #90a0c0;*/
 	background-color: #b8c8ed;
@@ -107,6 +107,9 @@ div.container {
 	padding-right:5px;
 	margin:auto;
 	text-align:left;
+	/*border-top-right-radius: 10px;
+	border-top-left-radius: 10px;*/
+	border-radius: 10px;
 }
 
 div.profile-info {
