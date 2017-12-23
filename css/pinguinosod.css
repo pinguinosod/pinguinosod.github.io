@@ -3,40 +3,38 @@ body {
 	background-color: #b0d0f0;
 	color: #222;
 	font-family: sans-serif;
+	text-align:center;
 }
 
-@media all and (max-width: 1690px) { 
-	body {	
-		padding-left:320px;
-		padding-right:320px;	
+@media all and (min-width: 1339px) { 
+	div.container {
+		width: 1300px;
 	}
 }
 
-@media all and (max-width: 1280px) { 
-	body {	
-		padding-left:230px;
-		padding-right:230px;
+@media all and (max-width: 1338px) { 
+	div.container {
+		width: 700px;
 	}
 }
 
-@media all and (max-width: 980px) {
-	body {	
-		padding-left:140px;
-		padding-right:140px;	
-	}
-}
-
-@media all and (max-width: 736px) {
-	body {	
-		padding-left:60px;
-		padding-right:60px;
+@media all and (max-width: 738px) {
+	div.container {
+		width: 443px;
 	}
 }
 
 @media all and (max-width: 480px) {
-	body {	
-		padding-left:0px;
-		padding-right:0px;
+	body {
+		padding:10px;
+		background-color: #b7d7f7;
+	}
+
+	div.container {
+		width: 100%;
+		margin:0px !important;
+		padding:0px !important;
+		border: none !important;
 	}
 }
 
@@ -47,6 +45,8 @@ div.container {
 	border-right: 1px solid #90a0c0;
 	background-color: #b7d7f7;
 	padding:10px;
+	margin:auto;
+	text-align:left;
 }
 
 div.profile-info {
