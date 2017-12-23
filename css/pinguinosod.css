@@ -13,10 +13,7 @@ body {
 
 	ul.profile-list li {
 		display: inline;
-	}
-
-	ul.profile-list li:not(:first-child) {
-		margin-left:40px;
+		margin-left:70px;
 	}
 }
 
@@ -27,10 +24,7 @@ body {
 
 	ul.profile-list li {
 		display: inline;
-	}
-
-	ul.profile-list li:not(:first-child) {
-		margin-left:20px;
+		margin-left:23px;
 	}
 }
 
@@ -41,10 +35,11 @@ body {
 
 	ul.profile-list li {
 		display: inline;
+		margin-left:10px;
 	}
 
-	ul.profile-list li:not(:first-child) {
-		margin-left:5px;
+	.profile-info ul li:last-child {
+		margin-left:22px;
 	}
 }
 
@@ -64,17 +59,9 @@ body {
 		display: block;
 	}
 
-	ul.profile-list li:not(:first-child) {
-		margin-left:0px;
+	.profile-info ul li:last-child {
+		margin-left:10px;
 	}
-
-	/*
-	ul.profile-list {
-		width:165px;
-		margin-left:auto;
-		margin-right:auto;
-	}
-	*/
 }
 
 
@@ -121,6 +108,16 @@ div.profile-info {
 	list-style-type: none;
 	padding-left:0px;
 	padding-right:0px;
+}
+
+.profile-info ul li {
+	white-space:nowrap;
+}
+
+.fa-width-fixer {
+	width:17px;
+	display:inline-block;
+	text-align:center;
 }
 
 .profile-content p {
