@@ -45,7 +45,7 @@ body {
 
 @media all and (max-width: 418px) {
 	body {
-		background-color: #c6b8ed;
+		background-color: #5d007f;
 	}
 
 	div.container {
@@ -70,7 +70,7 @@ body {
 	text-align: center;
 	margin: 0px;
 	color : #ff6201;
-	background-color: #66007f;
+	background-color: #5d007f;
 	/*border-radius: 5px;*/
 	padding-top:15px;
 	padding-bottom:15px;
