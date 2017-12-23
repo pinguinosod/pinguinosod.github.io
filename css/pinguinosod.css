@@ -6,7 +6,7 @@ body {
 	text-align:center;
 }
 
-@media all and (min-width: 1081px) { 
+@media all and (min-width: 1019px) { 
 	div.container {
 		width: 1000px;
 	}
@@ -20,7 +20,7 @@ body {
 	}
 }
 
-@media all and (max-width: 1080px) { 
+@media all and (max-width: 1018px) { 
 	div.container {
 		width: 700px;
 	}
@@ -34,9 +34,9 @@ body {
 	}
 }
 
-@media all and (max-width: 738px) {
+@media all and (max-width: 718px) {
 	div.container {
-		width: 443px;
+		width: 400px;
 	}
 
 	ul.profile-list li {
@@ -48,7 +48,7 @@ body {
 	}
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 418px) {
 	body {
 		background-color: #b8c8ed;
 	}
