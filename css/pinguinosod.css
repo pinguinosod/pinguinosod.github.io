@@ -10,17 +10,41 @@ body {
 	div.container {
 		width: 1000px;
 	}
+
+	ul.profile-list li {
+		display: inline;
+	}
+
+	ul.profile-list li:not(:first-child) {
+		margin-left:40px;
+	}
 }
 
 @media all and (max-width: 1080px) { 
 	div.container {
 		width: 700px;
 	}
+
+	ul.profile-list li {
+		display: inline;
+	}
+
+	ul.profile-list li:not(:first-child) {
+		margin-left:20px;
+	}
 }
 
 @media all and (max-width: 738px) {
 	div.container {
 		width: 443px;
+	}
+
+	ul.profile-list li {
+		display: inline;
+	}
+
+	ul.profile-list li:not(:first-child) {
+		margin-left:5px;
 	}
 }
 
@@ -35,6 +59,22 @@ body {
 		padding:0px !important;
 		border: none !important;
 	}
+
+	ul.profile-list li {
+		display: block;
+	}
+
+	ul.profile-list li:not(:first-child) {
+		margin-left:0px;
+	}
+
+	/*
+	ul.profile-list {
+		width:165px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	*/
 }
 
 
