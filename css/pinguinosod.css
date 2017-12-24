@@ -7,19 +7,19 @@ body {
 	text-align:center;
 }
 
-.top-banner {
+#top-banner {
 	padding-top: 10px;
 	background-color: #38004c;
 	color : #ff6201;
 }
 
-.top-banner .container{
+#top-banner .container{
 	background: url('../img/logo80c.png');
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
 }
 
-.top-banner h1 {
+#top-banner h1 {
 	text-align: left;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -60,19 +60,24 @@ div.card a:visited {
 	color: #ed8d34;
 }
 
-div.profile-info {
-	padding-left: 0px;
-	padding-right: 0px;
+div#profile-info, div#social-media {
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
 }
 
-.profile-info ul {
+ul.horizontal-list {
 	list-style-type: none;
 	padding-left: 0px;
 	padding-right: 0px;
 }
 
-.profile-info ul li {
+ul.horizontal-list li {
 	white-space: nowrap;
+}
+
+ul.horizontal-list li:last-child {
+	margin-right: 0px;
 }
 
 .fa-width-fixer {
@@ -81,7 +86,7 @@ div.profile-info {
 	text-align: center;
 }
 
-.profile-content p {
+#profile-content p {
 	text-align: justify;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -93,9 +98,9 @@ div.profile-info {
 		width: 1000px;
 	}
 
-	ul.profile-list li {
+	ul.horizontal-list li {
 		display: inline;
-		margin-left: 70px;
+		margin-right: 70px;
 	}
 }
 
@@ -104,34 +109,34 @@ div.profile-info {
 		width: 700px;
 	}
 
-	ul.profile-list li {
+	ul.horizontal-list li {
 		display: inline;
-		margin-left: 23px;
+		margin-right: 20px;
 	}
 }
 
 @media all and (max-width: 718px) {
 	div.container {
-		width: 400px;
+		width: 386px;
 	}
 
-	ul.profile-list li {
+	ul.horizontal-list li {
 		display: inline;
-		margin-left: 10px;
-	}
-
-	.profile-info ul li:last-child {
-		margin-left: 22px;
+		margin-right: 10px;
 	}
 }
 
-@media all and (max-width: 418px) {
+@media all and (max-width: 404px) {
 	body {
 		background-color: #5d007f;
 	}
 
 	div.container {
 		width: 100%;
+	}
+
+	div#profile-info, div#social-media {
+		text-align: left;
 	}
 
 	div.card {
@@ -143,11 +148,7 @@ div.profile-info {
 		border: none;
 	}
 
-	ul.profile-list li {
+	ul.horizontal-list li {
 		display: block;
-	}
-
-	.profile-info ul li:last-child {
-		margin-left: 10px;
 	}
 }
