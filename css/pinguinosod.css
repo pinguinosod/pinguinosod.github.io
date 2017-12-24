@@ -19,12 +19,17 @@ body {
 }
 
 div.container {
+	margin:auto;
+}
+
+div.card {
 	background-color: #c6b8ed;
+	margin-top:10px;
+	margin-bottom:10px;
 	padding-top:5px;
 	padding-bottom:5px;
 	padding-left:5px;
 	padding-right:5px;
-	margin:auto;
 	text-align:left;
 	border-radius: 10px;
 }
@@ -101,14 +106,15 @@ div.profile-info {
 
 	div.container {
 		width: 100%;
-		margin:0px;
+	}
+
+	div.card {
 		padding-top:5px;
 		padding-bottom:5px;
 		padding-left:0px;
 		padding-right:0px;
-		border: none;
 		border-radius:0px;
-		min-height: calc(100vh - 90px);
+		border: none;
 	}
 
 	ul.profile-list li {
