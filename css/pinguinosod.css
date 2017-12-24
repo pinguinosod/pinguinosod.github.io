@@ -1,4 +1,5 @@
 /* custom CSS for my personal website */
+/* colors: https://coolors.co/38004c-5d007f-c6b8ed-ff6201-ed8d34 */
 body {
 	background-color: #5d007f;
 	color: #222;
@@ -6,59 +7,84 @@ body {
 	text-align:center;
 }
 
-.top-banner h1 {
-	text-align: center;
-	margin: 0px;
+.top-banner {
+	padding-top: 10px;
+	background-color: #38004c;
 	color : #ff6201;
-	background-color: #5d007f;
-	padding-top:15px;
-	padding-bottom:15px;
-	padding-left:0px;
-	padding-right:0px;
+}
+
+.top-banner .container{
+	background: url('../img/logo80c.png');
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+.top-banner h1 {
+	text-align: left;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 90px;
+	padding-right: 0px;
 	height: 50px;
 }
 
 div.container {
-	margin:auto;
+	margin: auto;
 }
 
 div.card {
-	background-color: #c6b8ed;
-	margin-top:10px;
-	margin-bottom:10px;
-	padding-top:5px;
-	padding-bottom:5px;
-	padding-left:5px;
-	padding-right:5px;
-	text-align:left;
-	border-radius: 10px;
+	background-color: #38004c;
+	color: #c6b8ed;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: left;
+	border-radius: 5px;
+}
+
+div.card a {
+	color: #ed8d34;
+	text-decoration: none;
+}
+
+div.card a:hover {
+	text-decoration: underline;
+}
+
+div.card a:visited {
+	color: #ed8d34;
 }
 
 div.profile-info {
-	padding-left:10px;
-	padding-right:10px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 .profile-info ul {
 	list-style-type: none;
-	padding-left:0px;
-	padding-right:0px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 .profile-info ul li {
-	white-space:nowrap;
+	white-space: nowrap;
 }
 
 .fa-width-fixer {
-	width:17px;
-	display:inline-block;
-	text-align:center;
+	width: 17px;
+	display: inline-block;
+	text-align: center;
 }
 
 .profile-content p {
 	text-align: justify;
-	padding-left:10px;
-	padding-right:10px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 /* media queries */
@@ -69,7 +95,7 @@ div.profile-info {
 
 	ul.profile-list li {
 		display: inline;
-		margin-left:70px;
+		margin-left: 70px;
 	}
 }
 
@@ -80,7 +106,7 @@ div.profile-info {
 
 	ul.profile-list li {
 		display: inline;
-		margin-left:23px;
+		margin-left: 23px;
 	}
 }
 
@@ -91,11 +117,11 @@ div.profile-info {
 
 	ul.profile-list li {
 		display: inline;
-		margin-left:10px;
+		margin-left: 10px;
 	}
 
 	.profile-info ul li:last-child {
-		margin-left:22px;
+		margin-left: 22px;
 	}
 }
 
@@ -109,11 +135,11 @@ div.profile-info {
 	}
 
 	div.card {
-		padding-top:5px;
-		padding-bottom:5px;
-		padding-left:0px;
-		padding-right:0px;
-		border-radius:0px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 0px;
+		padding-right: 0px;
+		border-radius: 0px;
 		border: none;
 	}
 
@@ -122,6 +148,6 @@ div.profile-info {
 	}
 
 	.profile-info ul li:last-child {
-		margin-left:10px;
+		margin-left: 10px;
 	}
 }
