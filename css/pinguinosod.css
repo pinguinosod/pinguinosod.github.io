@@ -1,7 +1,7 @@
 /* custom CSS for my personal website */
-/* colors: https://coolors.co/38004c-5d007f-c6b8ed-ff6201-ed8d34 */
+/* colors: https://coolors.co/38004c-5a267f-c6b8ed-ff6201-ed8d34 */
 body {
-	background-color: #5d007f;
+	background-color: #5a267f;
 	color: #222;
 	font-family: sans-serif;
 	text-align:center;
@@ -128,7 +128,7 @@ ul.horizontal-list li:last-child {
 
 @media all and (max-width: 404px) {
 	body {
-		background-color: #5d007f;
+		background-color: #5a267f;
 	}
 
 	div.container {
