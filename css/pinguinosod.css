@@ -39,7 +39,7 @@ div.container {
 }
 
 #content {
-	margin-top:100px;
+	margin-top:95px;
 	z-index:1;
 }
 
@@ -144,7 +144,7 @@ ul.horizontal-list li:last-child {
 	}
 
 	#content {
-		margin-top:95px;
+		margin-top:90px;
 	}
 
 	div#profile-info, div#social-media {
