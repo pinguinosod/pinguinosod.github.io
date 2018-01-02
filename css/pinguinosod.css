@@ -143,6 +143,10 @@ ul.horizontal-list li:last-child {
 		width: 100%;
 	}
 
+	#content {
+		margin-top:95px;
+	}
+
 	div#profile-info, div#social-media {
 		text-align: left;
 	}
@@ -150,6 +154,8 @@ ul.horizontal-list li:last-child {
 	div.card {
 		border-radius: 0px;
 		border: none;
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 
 	ul.horizontal-list li {
