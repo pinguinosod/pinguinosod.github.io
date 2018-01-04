@@ -19,55 +19,63 @@
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
+        <div id="app">
+	        <!-- Top Banner -->
+	        <div id="top-banner">
+	            <div class="container">
+	                <h1>PinguinoSod</h1>
+	                <div class="customSelect">
+			            <select v-model="selected" id="selLocale" onchange="updateLocale()">
+			              <option v-for="locale in locales" v-bind:value="locale.code">
+			                {{ locale.languageName }}
+			              </option>
+			            </select>
+		            </div>
+	            </div>
+	        </div>
 
-        <!-- Top Banner -->
-        <div id="top-banner">
-            <div class="container">
-                <h1>PinguinoSod</h1>
-            </div>
-        </div>
-
-        <!-- Content -->
-        <div id="content">
-            <div class="container">
-                <div class="card">
-                    <!-- Brief list with my personal info -->
-                    <div id="profile-info">
-                        <ul class="horizontal-list">
-                            <li><span class="fa-width-fixer"><i class="fas fa-briefcase"></i></span> Web Developer</li>
-                            <li><span class="fa-width-fixer"><i class="fas fa-birthday-cake"></i></span> 17/12/1988</li>
-                            <li><span class="fa-width-fixer"><i class="fas fa-map-marker-alt"></i></span> <a href="https://www.google.cl/maps/place/Iquique,+Regi%C3%B3n+de+Tarapac%C3%A1/@-20.2448023,-70.2088902,12z/data=!3m1!4b1!4m5!3m4!1s0x9152f363f8369935:0x2a57aaaea9c94930!8m2!3d-20.2307033!4d-70.1356692" target="_blank">Iquique, Chile</a></li>
-                            <li><span class="fa-width-fixer"><i class="fas fa-envelope"></i></span> <a href="mailto:pinguino.sod@gmail.com" target="_blank">pinguino.sod@gmail.com</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <!-- Brief description about myself -->
-                    <div id="profile-content">
-                        <p>
-                            My name is David Cautin. I currently work at the IT department of <a href="http://www.unap.cl/" target="_blank">Arturo Prat University</a> as part of the software development team. I work as frontend web developer, role in which i have been able to affect the experience of hundreds of students and employees of the university.
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <!-- List of social media -->
-                    <div id="social-media">
-                        <ul class="horizontal-list">
-                            <li><span class="fa-width-fixer"><i class="fab fa-github"></i></span> <a href="https://github.com/pinguinosod" target="_blank">Github</a></li>
-                            <li><span class="fa-width-fixer"><i class="fab fa-linkedin"></i></span> <a href="https://www.linkedin.com/in/dacautin/?locale=en_US" target="_blank">Linkedin</a></li>
-                            <li><span class="fa-width-fixer"><i class="fab fa-twitter"></i></span> <a href="https://www.twitter.com/pinguinosod" target="_blank">Twitter</a></li>
-                            <li><span class="fa-width-fixer"><i class="fab fa-instagram"></i></span> <a href="https://www.instagram.com/pinguinosod" target="_blank">Instagram</a></li>
-                            <li><span class="fa-width-fixer"><i class="fab fa-tumblr"></i></span> <a href="https://pinguinosod.tumblr.com" target="_blank">Tumblr</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+	        <!-- Content -->
+	        <div id="content">
+	            <div class="container">
+	                <div class="card">
+	                    <!-- Brief list with my personal info -->
+	                    <div id="profile-info">
+	                        <ul class="horizontal-list">
+	                            <li><span class="fa-width-fixer"><i class="fas fa-briefcase"></i></span> {{ $t("jobRole") }}</li>
+	                            <li><span class="fa-width-fixer"><i class="fas fa-birthday-cake"></i></span> 17/12/1988</li>
+	                            <li><span class="fa-width-fixer"><i class="fas fa-map-marker-alt"></i></span> <a href="https://www.google.cl/maps/place/Iquique,+Regi%C3%B3n+de+Tarapac%C3%A1/@-20.2448023,-70.2088902,12z/data=!3m1!4b1!4m5!3m4!1s0x9152f363f8369935:0x2a57aaaea9c94930!8m2!3d-20.2307033!4d-70.1356692" target="_blank">Iquique, Chile</a></li>
+	                            <li><span class="fa-width-fixer"><i class="fas fa-envelope"></i></span> <a href="mailto:pinguino.sod@gmail.com" target="_blank">pinguino.sod@gmail.com</a></li>
+	                        </ul>
+	                    </div>
+	                </div>
+	                <div class="card">
+	                    <!-- Brief description about myself -->
+	                    <div id="profile-content">
+	                        <p v-html="$t('myShortDescription')"></p>
+	                    </div>
+	                </div>
+	                <div class="card">
+	                    <!-- List of social media -->
+	                    <div id="social-media">
+	                        <ul class="horizontal-list">
+	                            <li><span class="fa-width-fixer"><i class="fab fa-github"></i></span> <a href="https://github.com/pinguinosod" target="_blank">Github</a></li>
+	                            <li><span class="fa-width-fixer"><i class="fab fa-linkedin"></i></span> <a href="https://www.linkedin.com/in/dacautin/?locale=en_US" target="_blank">Linkedin</a></li>
+	                            <li><span class="fa-width-fixer"><i class="fab fa-twitter"></i></span> <a href="https://www.twitter.com/pinguinosod" target="_blank">Twitter</a></li>
+	                            <li><span class="fa-width-fixer"><i class="fab fa-instagram"></i></span> <a href="https://www.instagram.com/pinguinosod" target="_blank">Instagram</a></li>
+	                            <li><span class="fa-width-fixer"><i class="fab fa-tumblr"></i></span> <a href="https://pinguinosod.tumblr.com" target="_blank">Tumblr</a></li>
+	                        </ul>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/vendor/fontawesome-all.js"></script>
         <script src="js/plugins.js"></script>
+        <script src="js/vendor/vue.js"></script>
+		<script src="js/vendor/vue-i18n.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
