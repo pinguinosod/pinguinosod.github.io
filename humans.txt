@@ -3,13 +3,18 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Chief: PinguinoSod (David Cautin)
+	Contact: pinguino.sod@gmail.com
+	Twitter: @pinguinosod
+	From: Iquique, Chile
 
 # THANKS
 
-    <name>
+    PinguinoSod
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
     Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Font Awesome
+    Vue, Vuei18n
