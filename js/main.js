@@ -1,11 +1,19 @@
 $(document).ready(function() {
+	// detect the browser's language
+	var userLang = navigator.language || navigator.userLanguage; 
+	// if the browser's language is in the website available languages
+	if ($("#selLocale option[value="+userLang.substring(0,2)+"]").length >0) {
+		// set the website language to the browser's language
+		$("#selLocale option[value="+userLang.substring(0,2)+"]").prop('selected', true);
+		updateLocale();
+	}
 	// Starting animations
 	$("#top-banner").css('transform', 'translate(0px, 0px)');
 	var time = 400;
 	$(".card").each(function() {
 		var obj = $(this)
-		setTimeout( function(){ $(obj).css('transform', 'translate(0px, 0px)'); }, time)
-      	time += 400;
+		setTimeout( function(){ $(obj).css('transform', 'translate(0px, 0px)'); }, time);
+		time += 400;
 	});
 });
 
@@ -43,8 +51,6 @@ var localesList = [];
 for(var propertyName in messages) {
   // propertyName is what you want
   // you can get the value like this: myObject[propertyName]
-  //console.log(propertyName);
-  //console.log(messages[propertyName].language);
   localesList.push({
     code: propertyName,
     languageName: messages[propertyName].languageName
@@ -58,12 +64,9 @@ new Vue({
     selected: i18n.locale,
     locales: localesList
   }
-}).$mount('#app')
-
+}).$mount('#app');
 // Now the app has started!
 
-function updateLocale(){
-  i18n.locale = document.getElementById('selLocale').value;
-  //console.log(document.getElementById('selLocale').value);
-  //console.log(i18n.locale);
+function updateLocale() {
+	i18n.locale = document.getElementById('selLocale').value;
 }

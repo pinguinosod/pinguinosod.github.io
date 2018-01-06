@@ -25,10 +25,10 @@
 	            <div class="container">
 	                <h1>PinguinoSod</h1>
 	                <div class="customSelect">
-			            <select v-model="selected" id="selLocale" onchange="updateLocale()">
-			              <option v-for="locale in locales" v-bind:value="locale.code">
-			                {{ locale.languageName }}
-			              </option>
+			            <select id="selLocale" onchange="updateLocale();">
+                            <option value="en">English</option>
+                            <option value="es">Español</option>
+                            <option value="it">Italiano</option>
 			            </select>
 		            </div>
 	            </div>
