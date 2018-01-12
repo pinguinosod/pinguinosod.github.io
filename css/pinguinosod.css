@@ -1,15 +1,18 @@
 /* custom CSS for my personal website */
 /* colors: https://coolors.co/38004c-5a267f-c6b8ed-ff6201-ed8d34 */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 body {
-	background-color: #5a267f;
-	color: #222;
-	font-family: "Verdana", sans-serif;
+	background-color: #fff;
+	color: #000;
+	font-family: "Montserrat", sans-serif;
 	text-align: center;
 }
 
 #top-banner {
-	background-color: #38004c;
-	color : #ff6201;
+	background-color: #0e73c8;
+	color: #fff;
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -20,33 +23,43 @@ body {
 	text-align: left;
 }
 
+#top-banner a {
+	color: #fff;
+}
+
 #top-banner .container {
 	height: 60px;
+}
+
+#top-banner .minilogo {
+	position: relative;
+	top: 10px;
+	left: 3px;
 }
 
 #top-banner h1 {
 	text-align: left;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-top: 5px;
+	padding-top: 8px;
 	padding-bottom: 5px;
 	padding-left: 15px;
 	padding-right: 0px;
 	height: 20px;
 	display: inline-block;
-	float:left;
+	float: left;
 	position: absolute;
 }
 
 #top-banner .customSelect {
 	float: right;
 	margin-top: 15px;
-	margin-right: 15px;
+	margin-right: 7px;
 }
 
 .customSelect {
 	background: transparent;
-	border-color: #ff6201;
+	border-color: #fff;
 	border-bottom: 2px solid;
 	width: 88px;
 	overflow: hidden;
@@ -58,8 +71,8 @@ body {
    position: absolute;
    width: 8px;
    height: 8px;
-   border-left: 2px solid #ff6201;
-   border-bottom: 2px solid #ff6201;
+   border-left: 2px solid #fff;
+   border-bottom: 2px solid #fff;
    top: 5px;
    right: 5px;
    pointer-events: none;
@@ -67,14 +80,13 @@ body {
 }
 
 .customSelect select {
-	background: transparent;
 	border: none;
 	width: 108px;
-	color: #c6b8ed;
+	color: #fff;
 	position: relative;
 	cursor: pointer;
 	font-family: "Verdana", sans-serif;
-	background-color: #38004c;
+	background-color: #0e73c8;
 }
 
 div.container {
@@ -87,8 +99,8 @@ div.container {
 }
 
 div.card {
-	background-color: #38004c;
-	color: #c6b8ed;
+	background-color: #fff;
+	color: #000;
 	margin-top: 15px;
 	margin-bottom: 15px;
 	padding-top: 5px;
@@ -97,22 +109,22 @@ div.card {
 	padding-right: 15px;
 	text-align: left;
   	border-radius: 2px;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	/*box-shadow: 0 0px 1px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
 	transition: all 0.4s cubic-bezier(.25,.8,.25,1);
 	z-index: 2;
 	transform: translate(-100vw,0px);
 }
 
 div.card a {
-	color: #ed8d34;
+	color: #0e73c8;
 	text-decoration: none;
 }
 
-div.card a:visited {
-	color: #ed8d34;
+div.card a:hover {
+	color: #60b0f4;
 }
 
-div#profile-info, div#social-media {
+div#links {
 	padding-left: 10px;
 	padding-right: 10px;
 	text-align: center;
@@ -184,7 +196,7 @@ ul.horizontal-list li:last-child {
 	}
 
 	#top-banner h1 {
-		padding-top: 15px;
+		padding-top: 13px;
 		font-size: 1.5em;
 	}
 
@@ -192,7 +204,7 @@ ul.horizontal-list li:last-child {
 		width: 95%;
 	}
 
-	div#profile-info, div#social-media {
+	div#links {
 		text-align: left;
 	}
 
