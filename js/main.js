@@ -21,7 +21,7 @@ $(document).ready(function() {
 const messages = {
   en: {
   	languageName: 'English',
-    myShortDescription: 'My name is David Cautin. I currently work at the IT department of <a href="http://www.unap.cl/" target="_blank">Arturo Prat University</a> as part of the software development team. I work as frontend web developer, role in which i have been able to affect the experience of hundreds of students and employees of the university.'
+    myShortDescription: 'My name is David Cautin. I currently work at the IT department of <a href="http://www.unap.cl/" target="_blank">Arturo Prat University</a> as part of the software development team. I work as frontend web developer, role in which I have been able to affect the experience of hundreds of students and employees of the university.'
   },
   es: {
   	languageName: 'Español',
