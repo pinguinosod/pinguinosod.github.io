@@ -12,7 +12,7 @@ a:hover {
 }
 
 #topSection {
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,125,125,1);
 }
 
 .myBtn {
@@ -148,14 +148,27 @@ a:hover {
 
 
 /* media queries */
-
 @media (max-width: 768px) {
+
   body {
+    background: none;
+  }
+
+  #homeSection {
+    background: linear-gradient(180deg, rgba(0,255,255,1) 0%, rgba(255,0,255,1) 100%);
+  }
+
+  #topSection {
     background-color: rgba(0,125,125,1);
   }
 
   #mainEffects > div::before {
-    background-color: rgba(0,125,125,1);
+    background: rgba(220,0,220,1);
+    display:none;
+  }
+
+  #contactSection {
+    background: linear-gradient(180deg, rgba(0,125,125,1) 0%, rgba(125,0,125,1) 100%);
   }
 }
 
