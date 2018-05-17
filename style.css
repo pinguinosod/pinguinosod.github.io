@@ -41,7 +41,7 @@ a:hover {
   left: 0;
 }
 
-#home #welcomeText {
+#home #welcomeText h1, #home #welcomeText h2 {
   position: relative;
   top: 0;
   left: 0;
