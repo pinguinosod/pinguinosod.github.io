@@ -2,7 +2,7 @@
 
 body {
   color: #fff;
-  font-family: 'Comfortaa';
+  font-family: "Comfortaa", "Open Sans", sans-serif;
   background-color: rgba(0,125,125,1);
   background: fixed linear-gradient(180deg, rgba(0,255,255,1) 0%, rgba(255,0,255,1) 100%);
 }
@@ -45,7 +45,7 @@ a:hover {
   position: relative;
   top: 0;
   left: 0;
-  font-family: 'Courier New';
+  font-family: "Courier New", serif;
 }
 
 #home #david {
