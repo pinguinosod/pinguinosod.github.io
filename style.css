@@ -138,12 +138,8 @@ a:hover {
   color: rgba(255,0,255,1);
 }
 
-#contact {
+#contactSection > div.container > div.row > div {
   min-height: calc(100vh - 200px);
-}
-
-#about img {
-  /* nothing here yet */
 }
 
 
@@ -160,6 +156,14 @@ a:hover {
 
   #topSection {
     background-color: rgba(0,125,125,1);
+  }
+
+  .myBtn {
+    padding: 10px 8px 10px 8px;
+  }
+
+  #home {
+    min-height: calc(100vh - 40px);
   }
 
   #mainEffects > div::before {
