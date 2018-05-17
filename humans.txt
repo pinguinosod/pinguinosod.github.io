@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Chief: PinguinoSod (David Cautin)
+	Contact: pinguino.sod@gmail.com
+	Twitter: @pinguinosod
+	From: Graz, Austria
+
+# THANKS
+
+    PinguinoSod
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, jQuery, Bootstrap
+
+    Source: https://github.com/pinguinosod/pinguinosod.github.io
