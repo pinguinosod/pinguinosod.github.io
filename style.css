@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "Courier New";
+    src: url("Courier-New.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Comfortaa";
+    src: url("Comfortaa.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
   color: #fff;
   font-family: "Comfortaa", "Open Sans", sans-serif;
