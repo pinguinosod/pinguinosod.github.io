@@ -3,8 +3,7 @@
 body {
   color: #fff;
   font-family: "Comfortaa", "Open Sans", sans-serif;
-  background-color: rgba(0,125,125,1);
-  background: fixed linear-gradient(180deg, rgba(0,255,255,1) 0%, rgba(255,0,255,1) 100%);
+  background: none;
 }
 
 a:hover {
@@ -12,7 +11,7 @@ a:hover {
 }
 
 #topSection {
-  background-color: rgba(0,125,125,1);
+  background-color: rgba(0,50,50,1);
 }
 
 .myBtn {
@@ -29,6 +28,10 @@ a:hover {
 .myBtn:hover {
   text-decoration: none;
   color: rgba(0,255,255,1);
+}
+
+#homeSection {
+  background: linear-gradient(180deg, rgba(0,220,220,1) 0%, rgba(220,0,220,1) 100%);
 }
 
 #home {
@@ -53,7 +56,14 @@ a:hover {
   top: 0;
   left: 0;
   background: url('david.png') no-repeat center center fixed;
-  opacity: 0.1;
+  opacity: 0;
+  animation: appear 5s forwards 1s ease-in;
+  pointer-events:none;
+}
+
+@keyframes appear {
+  0%   { opacity: 0; }
+  100%  { opacity: 0.6; }
 }
 
 #aboutSection {
@@ -76,8 +86,7 @@ a:hover {
 }
 
 #contactSection {
-  background: #333;
-  background: rgb(0,0,0,0.5);
+  background: linear-gradient(180deg, rgba(0,50,50,1) 0%, rgba(50,0,50,1) 100%);
   color: #fff;
   min-height: 100vh;
 }
@@ -96,29 +105,12 @@ a:hover {
 
 /* media queries */
 @media (max-width: 768px) {
-
-  body {
-    background: none;
-  }
-
-  #homeSection {
-    background: linear-gradient(180deg, rgba(0,255,255,1) 0%, rgba(255,0,255,1) 100%);
-  }
-
-  #topSection {
-    background-color: rgba(0,125,125,1);
-  }
-
   .myBtn {
     padding: 10px 8px 10px 8px;
   }
 
   #home {
     min-height: calc(100vh - 40px);
-  }
-
-  #contactSection {
-    background: linear-gradient(180deg, rgba(0,125,125,1) 0%, rgba(125,0,125,1) 100%);
   }
 }
 
