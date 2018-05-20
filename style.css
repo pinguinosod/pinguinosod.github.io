@@ -35,7 +35,7 @@ a:hover {
   min-height: calc(100vh - 60px);
 }
 
-#home #mainEffects {
+#home #particles-js {
   position: absolute;
   top: 0;
   left: 0;
@@ -53,55 +53,7 @@ a:hover {
   top: 0;
   left: 0;
   background: url('david.png') no-repeat center center fixed;
-  opacity: 0.4;
-}
-
-#mainEffects > div {
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  position: relative;
-}
-
-#mainEffects > div::before {
-  content: '';
-  background-color: rgba(0,125,125,1);
-  background: fixed linear-gradient(0deg, rgba(0,255,255,1) 0%, rgba(255,0,255,1) 100%);
-  height: 100%;
-  width: 100%;
-  top: 0;
-  position: absolute;
-}
-
-#mainEffects > div:nth-child(1)::before {
-  animation: contractExpandLeft 8s normal 2s infinite ease-in-out;
-}
-#mainEffects > div:nth-child(2)::before {
-  animation: contractExpandRight 12s normal 2s infinite ease-in-out;
-}
-#mainEffects > div:nth-child(3)::before {
-  animation: contractExpandLeft 16s normal 2s infinite ease-in-out;
-}
-#mainEffects > div:nth-child(4)::before {
-  animation: contractExpandRight 16s normal 2s infinite ease-in-out;
-}
-#mainEffects > div:nth-child(5)::before {
-  animation: contractExpandLeft 12s normal 2s infinite ease-in-out;
-}
-#mainEffects > div:nth-child(6)::before {
-  animation: contractExpandRight 8s normal 2s infinite ease-in-out;
-}
-
-@keyframes contractExpandLeft {
-  0%   { width: 100%; right: auto; left: 0 }
-  50%  { width: 0%; }
-  100% { width: 100%; left: auto; right: 0 }
-}
-
-@keyframes contractExpandRight {
-  0%   { width: 100%; right: 0; left: auto }
-  50%  { width: 0%; }
-  100% { width: 100%; left: 0; right: auto }
+  opacity: 0.1;
 }
 
 #aboutSection {
@@ -142,7 +94,6 @@ a:hover {
   min-height: calc(100vh - 200px);
 }
 
-
 /* media queries */
 @media (max-width: 768px) {
 
@@ -164,11 +115,6 @@ a:hover {
 
   #home {
     min-height: calc(100vh - 40px);
-  }
-
-  #mainEffects > div::before {
-    background: rgba(220,0,220,1);
-    display:none;
   }
 
   #contactSection {
