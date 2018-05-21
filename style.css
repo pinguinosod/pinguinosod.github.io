@@ -67,13 +67,21 @@ a:hover {
   top: 0;
   left: 0;
   background: url('david.png') no-repeat center center fixed;
-  opacity: 0;
-  animation: appear 5s forwards 1s ease-in;
   pointer-events:none;
 }
 
-@keyframes appear {
-  0%   { opacity: 0; }
+#home #opacity-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0,220,220,1) 0%, rgba(220,0,220,1) 100%);
+  animation: make-transparent 5s forwards 1s ease-out;
+  opacity:1;
+  pointer-events:none;
+}
+
+@keyframes make-transparent {
+  0%   { opacity: 1; }
   100%  { opacity: 0.6; }
 }
 
@@ -122,6 +130,10 @@ a:hover {
 
   #home {
     min-height: calc(100vh - 40px);
+  }
+
+  #home #david {
+    background-size: cover;
   }
 }
 
