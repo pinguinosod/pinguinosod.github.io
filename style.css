@@ -105,7 +105,6 @@ a:hover {
 }
 
 #aboutSection > div.container > div.row {
-  max-width: 720px;
   margin: auto;
 }
 
@@ -164,9 +163,13 @@ a:hover {
 }
 
 @media (min-width: 992px) {
-
+  .container {
+      max-width: 920px;
+  }
 }
 
 @media (min-width: 1200px) {
-
+  .container {
+      max-width: 920px;
+  }
 }
