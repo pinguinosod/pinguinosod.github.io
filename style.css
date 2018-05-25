@@ -104,6 +104,23 @@ a:hover {
   color: rgba(125,0,255,1);
 }
 
+#aboutSection > div.container > div.row {
+  max-width: 720px;
+  margin: auto;
+}
+
+#aboutSection > div.container > div.row > div {
+  opacity:0;
+  transform: translate(0px,150px);
+  transition: opacity 0.8s ease-in, transform 0.8s ease-out;
+}
+
+#aboutSection > div.container > div.row > div > ul {
+  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #contactSection {
   background: linear-gradient(180deg, rgba(0,50,50,1) 0%, rgba(50,0,50,1) 100%);
   color: #fff;
