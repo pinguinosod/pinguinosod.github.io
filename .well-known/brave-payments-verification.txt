@@ -1,0 +1,4 @@
+This is a Brave Payments publisher verification file.
+
+Domain: pinguinosod.github.io
+Token: 8740961c6ccb4be89024f923d3f493583166c578de67deb553a0e499ec3a89d1
