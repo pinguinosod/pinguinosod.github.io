@@ -132,6 +132,16 @@ a:hover {
   min-height: calc(100vh - 200px);
 }
 
+#footerSection {
+  background-color: #000;
+}
+
+#footerSection  #footer > div.d-flex a.socialMediaLink > i {
+  font-size: 36px;
+  color: #fff;
+  margin: 12px;
+}
+
 /* media queries */
 @media (max-width: 576px) {
   .myBtn {
