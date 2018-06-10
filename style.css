@@ -138,8 +138,12 @@ a:hover {
 
 #footerSection  #footer > div.d-flex a.socialMediaLink > i {
   font-size: 36px;
-  color: #fff;
+  color: #555;
   margin: 12px;
+}
+
+#footerSection  #footer > div.d-flex a.socialMediaLink > i:hover {
+  color: #fff;
 }
 
 /* media queries */
