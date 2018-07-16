@@ -21,6 +21,12 @@ a:hover {
   text-decoration: none;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
 #topSection {
   background-color: rgba(0,50,50,1);
 }
@@ -90,6 +96,12 @@ a:hover {
   color: #000;
   padding: 20px 0px 20px 0px;
   min-height: 100vh;
+  position: relative;
+}
+
+#aboutSection > #about {
+  position: absolute;
+  top: -60px;
 }
 
 #aboutSection p, #aboutSection li {
@@ -117,7 +129,13 @@ a:hover {
 #contactSection {
   background: linear-gradient(180deg, rgba(0,50,50,1) 0%, rgba(50,0,50,1) 100%);
   color: #fff;
-  min-height: 100vh;
+  min-height: calc(100vh - 64px);
+  position: relative;
+}
+
+#contactSection > #contact {
+  position: absolute;
+  top: -60px;
 }
 
 #contactSection a {
@@ -159,6 +177,20 @@ a:hover {
   #home #david {
     background: url('david400.png') no-repeat center center fixed;
     background-size: cover;
+  }
+
+  #aboutSection > #about {
+    position: absolute;
+    top: -44px;
+  }
+
+  #contactSection {
+    min-height: calc(100vh - 44px);
+  }
+
+  #contactSection > #contact {
+    position: absolute;
+    top: -44px;
   }
 }
 
