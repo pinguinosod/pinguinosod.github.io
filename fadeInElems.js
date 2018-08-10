@@ -27,7 +27,7 @@
 })(jQuery);
 
 $(window).on('resize scroll', function() {
-  $("#aboutSection > div.container > div.row > div").each(function (){
+  $("#aboutSection > div.container-fluid > div.container > div.row > div").each(function (){
     var obj = $(this);
     if (obj.visible( true )) {
       obj.css('opacity',1);

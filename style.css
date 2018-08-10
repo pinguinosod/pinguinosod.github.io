@@ -92,16 +92,27 @@ header {
 }
 
 #aboutSection {
-  background: rgba(240, 240, 240, 1);
+  background: #fff;
   color: #000;
-  padding: 20px 0px 20px 0px;
-  min-height: 100vh;
   position: relative;
 }
 
 #aboutSection > #about {
   position: absolute;
   top: -60px;
+}
+
+#aboutSection > .container-fluid > .container {
+  min-height: calc(100vh - 64px);
+  padding: 20px 0px 20px 0px;
+}
+
+#aboutSection > .container-fluid > .container > .row {
+  width: 100%;
+}
+
+#aboutSection > .container-fluid:nth-child(odd) {
+  background: rgba(240, 240, 240, 1);
 }
 
 #aboutSection p, #aboutSection li {
@@ -120,7 +131,7 @@ header {
   margin: auto;
 }
 
-#aboutSection > div.container > div.row > div {
+#aboutSection > div.container-fluid > div.container > div.row > div {
   opacity: 0;
   transform: translate(0px,150px);
   transition: opacity 0.8s ease-in, transform 0.8s ease-out;
@@ -182,6 +193,10 @@ header {
   #aboutSection > #about {
     position: absolute;
     top: -44px;
+  }
+
+  #aboutSection > .container-fluid > .container {
+    min-height: calc(100vh - 44px);
   }
 
   #contactSection {
