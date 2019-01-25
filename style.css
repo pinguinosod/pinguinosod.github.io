@@ -1,14 +1,15 @@
 @font-face {
-    font-family: "Courier New";
-    src: url("Courier-New.ttf") format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Courier New";
+  src: url("Courier-New.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
+
 @font-face {
-    font-family: "Comfortaa";
-    src: url("Comfortaa.ttf") format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Comfortaa";
+  src: url("Comfortaa.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -28,7 +29,7 @@ header {
 }
 
 #topSection {
-  background-color: rgba(0,50,50,1);
+  background-color: rgba(0, 50, 50, 1);
 }
 
 .myBtn {
@@ -44,11 +45,11 @@ header {
 
 .myBtn:hover {
   text-decoration: none;
-  color: rgba(0,255,255,1);
+  color: rgba(0, 255, 255, 1);
 }
 
 #homeSection {
-  background: linear-gradient(180deg, rgba(0,220,220,1) 0%, rgba(220,0,220,1) 100%);
+  background: linear-gradient(180deg, rgba(0, 220, 220, 1) 0%, rgba(220, 0, 220, 1) 100%);
 }
 
 #home {
@@ -80,15 +81,19 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(180deg, rgba(0,220,220,1) 0%, rgba(220,0,220,1) 100%);
+  background: linear-gradient(180deg, rgba(0, 220, 220, 1) 0%, rgba(220, 0, 220, 1) 100%);
   animation: make-transparent 5s forwards 1s ease-out;
   opacity: 1;
   pointer-events: none;
 }
 
 @keyframes make-transparent {
-  0%    { opacity: 1; }
-  100%  { opacity: 0.6; }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
 }
 
 #aboutSection {
@@ -120,11 +125,11 @@ header {
 }
 
 #aboutSection a {
-  color: rgba(0,125,255,1);
+  color: rgba(0, 125, 255, 1);
 }
 
 #aboutSection a:hover {
-  color: rgba(125,0,255,1);
+  color: rgba(125, 0, 255, 1);
 }
 
 #aboutSection > div.container > div.row {
@@ -133,12 +138,12 @@ header {
 
 #aboutSection > div.container-fluid > div.container > div.row > div {
   opacity: 0;
-  transform: translate(0px,150px);
+  transform: translate(0px, 150px);
   transition: opacity 0.8s ease-in, transform 0.8s ease-out;
 }
 
 #contactSection {
-  background: linear-gradient(180deg, rgba(0,50,50,1) 0%, rgba(50,0,50,1) 100%);
+  background: linear-gradient(180deg, rgba(0, 50, 50, 1) 0%, rgba(50, 0, 50, 1) 100%);
   color: #fff;
   min-height: calc(100vh - 64px);
   position: relative;
@@ -150,11 +155,11 @@ header {
 }
 
 #contactSection a {
-  color: rgba(0,255,255,1);
+  color: rgba(0, 255, 255, 1);
 }
 
 #contactSection a:hover {
-  color: rgba(255,0,255,1);
+  color: rgba(255, 0, 255, 1);
 }
 
 #contactSection > div.container > div.row > div {
@@ -165,13 +170,13 @@ header {
   background-color: #000;
 }
 
-#footerSection  #footer > div.d-flex a.socialMediaLink > i {
+#footerSection #footer > div.d-flex a.socialMediaLink > i {
   font-size: 36px;
   color: #555;
   margin: 12px;
 }
 
-#footerSection  #footer > div.d-flex a.socialMediaLink > i:hover {
+#footerSection #footer > div.d-flex a.socialMediaLink > i:hover {
   color: #fff;
 }
 
@@ -219,12 +224,12 @@ header {
 
 @media (min-width: 992px) {
   .container {
-      max-width: 920px;
+    max-width: 920px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-      max-width: 920px;
+    max-width: 920px;
   }
 }
