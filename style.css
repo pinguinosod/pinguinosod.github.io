@@ -1,235 +1,32 @@
-@font-face {
-  font-family: "Courier New";
-  src: url("Courier-New.ttf") format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Comfortaa";
-  src: url("Comfortaa.ttf") format('truetype');
-  font-weight: normal;
-  font-style: normal;
+@keyframes uwu {
+  from {
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+  }
+  30% {
+    background-color: #9932CC;
+    height: 100vh;
+    width: 100vw;
+  }
+  to {
+    background-color: #000;
+    height: 1vh;
+    width: 1vw;
+  }
 }
 
 body {
   color: #fff;
-  font-family: "Comfortaa", "Open Sans", sans-serif;
-  background: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-header {
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-
-#topSection {
-  background-color: rgba(0, 50, 50, 1);
-}
-
-.myBtn {
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  color: #fff;
-  font-weight: bold;
-  padding: 20px 8px 20px 8px;
-  min-width: 150px;
-  text-align: center;
-}
-
-.myBtn:hover {
-  text-decoration: none;
-  color: rgba(0, 255, 255, 1);
-}
-
-#homeSection {
-  background: linear-gradient(180deg, rgba(0, 220, 220, 1) 0%, rgba(220, 0, 220, 1) 100%);
-}
-
-#home {
-  min-height: calc(100vh - 60px);
-}
-
-#home #particles-js {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#home #welcomeText h1, #home #welcomeText h2 {
-  position: relative;
-  top: 0;
-  left: 0;
-  font-family: "Courier New", serif;
-}
-
-#home #david {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: url('david.png') no-repeat center center fixed;
-  pointer-events: none;
-}
-
-#home #opacity-gradient {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(180deg, rgba(0, 220, 220, 1) 0%, rgba(220, 0, 220, 1) 100%);
-  animation: make-transparent 5s forwards 1s ease-out;
-  opacity: 1;
-  pointer-events: none;
-}
-
-@keyframes make-transparent {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.6;
-  }
-}
-
-#aboutSection {
-  background: #fff;
-  color: #000;
-  position: relative;
-}
-
-#aboutSection > #about {
-  position: absolute;
-  top: -60px;
-}
-
-#aboutSection > .container-fluid > .container {
-  min-height: calc(100vh - 64px);
-  padding: 20px 0px 20px 0px;
-}
-
-#aboutSection > .container-fluid > .container > .row {
-  width: 100%;
-}
-
-#aboutSection > .container-fluid:nth-child(odd) {
-  background: rgba(240, 240, 240, 1);
-}
-
-#aboutSection p, #aboutSection li {
-  color: #555;
-}
-
-#aboutSection a {
-  color: rgba(0, 125, 255, 1);
-}
-
-#aboutSection a:hover {
-  color: rgba(125, 0, 255, 1);
-}
-
-#aboutSection > div.container > div.row {
-  margin: auto;
-}
-
-#aboutSection > div.container-fluid > div.container > div.row > div {
-  opacity: 0;
-  transform: translate(0px, 150px);
-  transition: opacity 0.8s ease-in, transform 0.8s ease-out;
-}
-
-#contactSection {
-  background: linear-gradient(180deg, rgba(0, 50, 50, 1) 0%, rgba(50, 0, 50, 1) 100%);
-  color: #fff;
-  min-height: calc(100vh - 64px);
-  position: relative;
-}
-
-#contactSection > #contact {
-  position: absolute;
-  top: -60px;
-}
-
-#contactSection a {
-  color: rgba(0, 255, 255, 1);
-}
-
-#contactSection a:hover {
-  color: rgba(255, 0, 255, 1);
-}
-
-#contactSection > div.container > div.row > div {
-  min-height: calc(100vh - 200px);
-}
-
-#footerSection {
+  font-family: monospace;
   background-color: #000;
+  cursor: help;
 }
 
-#footerSection #footer > div.d-flex a.socialMediaLink > i {
-  font-size: 36px;
-  color: #555;
-  margin: 12px;
-}
-
-#footerSection #footer > div.d-flex a.socialMediaLink > i:hover {
-  color: #fff;
-}
-
-/* media queries */
-@media (max-width: 576px) {
-  .myBtn {
-    padding: 10px 8px 10px 8px;
-  }
-
-  #home {
-    min-height: calc(100vh - 40px);
-  }
-
-  #home #david {
-    background: url('david400.png') no-repeat center center fixed;
-    background-size: cover;
-  }
-
-  #aboutSection > #about {
-    position: absolute;
-    top: -44px;
-  }
-
-  #aboutSection > .container-fluid > .container {
-    min-height: calc(100vh - 44px);
-  }
-
-  #contactSection {
-    min-height: calc(100vh - 44px);
-  }
-
-  #contactSection > #contact {
-    position: absolute;
-    top: -44px;
-  }
-}
-
-@media (min-width: 576px) {
-
-}
-
-@media (min-width: 768px) {
-
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 920px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 920px;
-  }
+div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: uwu 15s cubic-bezier(1, 0.3, 0.8, 1) 3s infinite;
 }
