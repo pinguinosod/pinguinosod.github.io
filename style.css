@@ -20,13 +20,30 @@ body {
   color: #fff;
   font-family: monospace;
   background-color: #000;
-  cursor: help;
 }
 
-div {
+div.uwu {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  animation: uwu 15s cubic-bezier(1, 0.3, 0.8, 1) 3s infinite;
+  animation: uwu 15s cubic-bezier(1, 0.3, 0.8, 1) 4s infinite;
+}
+
+.lb-container {
+  background-color: #000 !important;
+}
+
+.lb-wrapper {
+  background-color: #000 !important;
+  width: 90% !important;
+  margin-top: 45vh;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: .25rem;
+}
+
+.lb-inner {
+  background-color: purple !important;
+  border-radius: .25rem;
 }
