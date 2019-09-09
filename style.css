@@ -1,6 +1,42 @@
 body {
-  color: #fff;
   font-family: monospace;
   background-color: #000;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  min-height: 90vh;
+  font-weight: bold;
+}
+
+div#moly {
+  padding: 0;
+  margin: 0 auto;
+  width: 50vw;
+  word-wrap: break-word;
+  position: relative;
+}
+
+span {
+  display: inline-block;
+}
+
+span:nth-child(1n) {
+  color: #ffd319;
+}
+
+span:nth-child(2n) {
+  color: #ff901f;
+}
+
+span:nth-child(3n) {
+  color: #ff2975;
+}
+
+span:nth-child(4n) {
+  color: #f222ff;
+}
+
+span:nth-child(5n) {
+  color: #8c1eff;
 }
