@@ -5,25 +5,25 @@ const e = React.createElement;
 class Moly extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { aaaas: 1 };
+    this.state = { count: 1 };
   }
 
   componentDidMount() {
     const ticker = setInterval(() => {
-      if (this.state.aaaas < 360) this.setState({ aaaas: this.state.aaaas + 1 })
+      if (this.state.count < 360) this.setState({ count: this.state.count + 1 })
     }, 16)
   }
 
-  getAaaarray(aaaas) {
+  getAaaarray(count) {
     let aaaarray = []
-    for (let i = 0; i < aaaas; i++) {
+    for (let i = 0; i < count; i++) {
       aaaarray.push(aaaa(i))
     }
     return aaaarray;
   }
 
   render() {
-    const aaaarray = this.getAaaarray(this.state.aaaas);
+    const aaaarray = this.getAaaarray(this.state.count);
     return e(
       'div',
       {
