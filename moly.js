@@ -1,52 +1,37 @@
 'use strict';
 
 const e = React.createElement;
+const { interval } = rxjs;
+const { take } = rxjs.operators;
 
 class Moly extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { count: 1 };
+    this.state = { aaaarray: [] }; 
   }
 
   componentDidMount() {
-    const ticker = setInterval(() => {
-      if (this.state.count < 360) this.setState({ count: this.state.count + 1 })
-    }, 16)
-  }
-
-  getAaaarray(count) {
-    let aaaarray = []
-    for (let i = 0; i < count; i++) {
-      aaaarray.push(aaaa(i))
-    }
-    return aaaarray;
+    const bodyWidth = document.querySelector("body").offsetWidth;
+    interval(60)
+    .pipe(take(Math.floor(bodyWidth/10)))
+    .subscribe(key => {
+      const aaaarray = this.state.aaaarray;
+      aaaarray.push(aaaa(key));
+      this.setState({aaaarray});
+    })
   }
 
   render() {
-    const aaaarray = this.getAaaarray(this.state.count);
     return e(
       'div',
-      {
-        style: {
-          transform: 'scale(' + (2 - ((aaaarray.length / 360) * 2)) + ')'
-        }
-      },
-      aaaarray
+      null,
+      this.state.aaaarray
     );
   }
 }
 
 const aaaa = key => {
-  const generateAaaaProps = (key) => {
-    return {
-      key,
-      style: {
-        fontSize: (Math.floor(Math.random() * 16 + 10)) + 'px',
-        transform: 'rotate(' + (Math.floor(Math.random() * 360)) + 'deg)'
-      }
-    }
-  }
-  return e('span', generateAaaaProps(key), 'a');
+  return e('span', {key}, 'a');
 }
 
 const domContainer = document.querySelector('#moly');

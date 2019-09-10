@@ -5,38 +5,117 @@ body {
   display: flex;
   align-items: center;
   justify-content:center;
-  min-height: 90vh;
+  min-height: 100vh;
   font-weight: bold;
+  overflow: hidden;
 }
 
 div#moly {
   padding: 0;
   margin: 0 auto;
-  width: 50vw;
+  width: 100vw;
+  height: 100vh;
   word-wrap: break-word;
   position: relative;
 }
 
 span {
   display: inline-block;
+  position: relative;
 }
 
-span:nth-child(1n) {
-  color: #ffd319;
+span:nth-child(even) {
+  animation: aaaa-even 3s ease-in-out 0s infinite;
 }
 
-span:nth-child(2n) {
-  color: #ff901f;
+span:nth-child(odd) {
+  animation: aaaa-odd 3s ease-in-out 0s infinite;
 }
 
-span:nth-child(3n) {
-  color: #ff2975;
+span:nth-child(8n+1) {
+  color: #2D7CA3;
 }
 
-span:nth-child(4n) {
-  color: #f222ff;
+span:nth-child(8n+3) {
+  color: #46C2FF;
 }
 
-span:nth-child(5n) {
-  color: #8c1eff;
+span:nth-child(8n+5) {
+  color: #89D8FF;
+}
+
+span:nth-child(8n+7) {
+  color: #46C2FF;
+}
+
+span:nth-child(8n+2) {
+  color: #532DA3;
+}
+
+span:nth-child(8n+4) {
+  color: #8246FF;
+}
+
+span:nth-child(8n+6) {
+  color: #AF89FF;
+}
+
+span:nth-child(8n+8) {
+  color: #8246FF;
+}
+ 
+@keyframes aaaa-even {
+  from  {
+    top: 30vh;
+    transform: rotate(0deg);
+    font-weight: bold;
+    font-size: 16px;
+  } 25% {
+    transform: rotate(90deg);
+    font-weight: bold;
+    font-size: 22px;
+  } 50% {
+    top: 60vh;
+    transform: rotate(180deg);
+    font-weight: bold;
+    font-size: 16px;
+  } 75% {
+    transform: rotate(270deg);
+    font-weight: normal;
+    font-size: 10px;
+    opacity: 0.7;
+  } to {
+    top: 30vh;
+    transform: rotate(360deg);
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
+ 
+@keyframes aaaa-odd {
+  from  {
+    top: 60vh;
+    transform: rotate(360deg);
+    font-weight: bold;
+    font-size: 16px;
+  } 25% {
+    transform: rotate(270deg);
+    font-weight: normal;
+    font-size: 10px;
+    opacity: 0.7;
+  } 50% {
+    top: 30vh;
+    transform: rotate(180deg);
+    font-weight: bold;
+    font-size: 16px;
+  } 75% {
+    transform: rotate(90deg);
+    font-weight: bold;
+    font-size: 20px;
+  } to {
+    top: 60vh;
+    transform: rotate(0deg);
+    font-weight: bold;
+    font-size: 16px;
+  }
 }
