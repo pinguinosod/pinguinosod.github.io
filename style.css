@@ -25,25 +25,38 @@ span {
 }
 
 span:nth-child(even) {
-  animation: aaaa-even 3s ease-in-out 0s infinite;
+  animation:
+   aaaa-even 3s ease-out 0s 2,
+   aaaa-even 3s ease-in 6s 2,
+   aaaa-even 3s cubic-bezier(1, 0.3, 0.8, 1) 12s 2,
+   aaaa-even 1.5s linear 18s 6,
+   aaaa-even 9s steps(9, end) 27s 1,
+   aaaa-even 4s ease-in-out 45s infinite;
 }
 
 span:nth-child(odd) {
-  animation: aaaa-odd 3s ease-in-out 0s infinite;
+  animation:
+   aaaa-odd 3s ease-out 0s 2,
+   aaaa-odd 3s ease-in 6s 2,
+   aaaa-odd 3s cubic-bezier(1, 0.3, 0.8, 1)  12s 2,
+   aaaa-odd 1.5s linear 18s 6,
+   aaaa-odd 9s steps(9, end) 27s 1,
+   aaaa-odd 4s ease-in-out 45s infinite;
 }
  
 @keyframes aaaa-even {
   from  {
     top: 30vh;
-    transform: rotate(0deg);
+    transform: rotate(360deg);
     font-weight: bold;
     font-size: 16px;
     color: #46C2FF;
   } 25% {
-    transform: rotate(90deg);
-    font-weight: bold;
-    font-size: 22px;
-    color: #89D8FF;
+    transform: rotate(270deg);
+    font-weight: normal;
+    font-size: 10px;
+    color: #2D7CA3;
+    opacity: 0.7;
   } 50% {
     top: 60vh;
     transform: rotate(180deg);
@@ -51,14 +64,13 @@ span:nth-child(odd) {
     font-size: 16px;
     color: #46C2FF;
   } 75% {
-    transform: rotate(270deg);
-    font-weight: normal;
-    font-size: 10px;
-    color: #2D7CA3;
-    opacity: 0.7;
+    transform: rotate(90deg);
+    font-weight: bold;
+    font-size: 22px;
+    color: #89D8FF;
   } to {
     top: 30vh;
-    transform: rotate(360deg);
+    transform: rotate(0deg);
     font-weight: bold;
     font-size: 16px;
     color: #46C2FF;
@@ -68,30 +80,30 @@ span:nth-child(odd) {
 @keyframes aaaa-odd {
   from  {
     top: 60vh;
-    transform: rotate(360deg);
+    transform: rotate(180deg);
     font-weight: bold;
     font-size: 16px;
     color: #8246FF;
   } 25% {
-    transform: rotate(270deg);
-    font-weight: normal;
-    font-size: 10px;
-    color: #532DA3;
-    opacity: 0.7;
+    transform: rotate(90deg);
+    font-weight: bold;
+    font-size: 22px;
+    color: #AF89FF;
   } 50% {
     top: 30vh;
-    transform: rotate(180deg);
+    transform: rotate(0deg);
     font-weight: bold;
     font-size: 16px;
     color: #8246FF;
   } 75% {
     transform: rotate(90deg);
-    font-weight: bold;
-    font-size: 22px;
-    color: #AF89FF;
+    font-weight: normal;
+    font-size: 10px;
+    color: #532DA3;
+    opacity: 0.7;
   } to {
     top: 60vh;
-    transform: rotate(0deg);
+    transform: rotate(180deg);
     font-weight: bold;
     font-size: 16px;
     color: #8246FF;
