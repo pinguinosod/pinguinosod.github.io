@@ -17,6 +17,8 @@ div#moly {
   height: 100vh;
   word-wrap: break-word;
   position: relative;
+  transform: rotate(20deg);
+  animation: molly 64s ease-in-out 45s infinite;
 }
 
 span {
@@ -26,22 +28,22 @@ span {
 
 span:nth-child(even) {
   animation:
-   aaaa-even 3s ease-out 0s 2,
-   aaaa-even 3s ease-in 6s 2,
-   aaaa-even 3s cubic-bezier(1, 0.3, 0.8, 1) 12s 2,
-   aaaa-even 1.5s linear 18s 6,
-   aaaa-even 9s steps(9, end) 27s 1,
-   aaaa-even 4s ease-in-out 45s infinite;
+   aaaa-even 1.5s linear 0s 6,
+   aaaa-even 9s steps(9, end) 9s 1,
+   aaaa-even 3s cubic-bezier(1, 0.3, 0.8, 1) 18s 2,
+   aaaa-even 3s ease-out 24s 2,
+   aaaa-even 3s ease-in 30s 2,
+   aaaa-even 4s ease-in-out 36s infinite;
 }
 
 span:nth-child(odd) {
   animation:
-   aaaa-odd 3s ease-out 0s 2,
-   aaaa-odd 3s ease-in 6s 2,
-   aaaa-odd 3s cubic-bezier(1, 0.3, 0.8, 1)  12s 2,
-   aaaa-odd 1.5s linear 18s 6,
-   aaaa-odd 9s steps(9, end) 27s 1,
-   aaaa-odd 4s ease-in-out 45s infinite;
+   aaaa-odd 1.5s linear 0s 6,
+   aaaa-odd 9s steps(9, end) 9s 1,
+   aaaa-odd 3s cubic-bezier(1, 0.3, 0.8, 1)  18s 2,
+   aaaa-odd 3s ease-out 24s 2,
+   aaaa-odd 3s ease-in 30s 2,
+   aaaa-odd 4s ease-in-out 36s infinite;
 }
  
 @keyframes aaaa-even {
@@ -107,5 +109,60 @@ span:nth-child(odd) {
     font-weight: bold;
     font-size: 16px;
     color: #8246FF;
+  }
+}
+
+@keyframes molly {
+  from {
+    transform:
+     rotate(20deg)
+  } 20% {
+    opacity: 0.9;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+    transform:
+     rotate(120deg)
+     scale(.95)
+  } 40% {
+    opacity: 0.6;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+    transform:
+     rotate(200deg)
+     scale(1)
+  } 50% {
+    opacity: 0.8;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+    transform:
+     rotate(110deg)
+     scale(1.2)
+     perspective(80vw)
+     rotateY(10deg)
+     translate(5vw, 2vh)
+  } 60% {
+    opacity: 0.9;
+    text-shadow: 0 0 5px #fff;
+    transform:
+     rotate(40deg)
+     scale(1.1)
+     perspective(65vw)
+     rotateY(25deg)
+     translate(15vw, 5vh)
+  } 80% {
+    opacity: 0.9;
+    text-shadow: 0 0 5px #fff;
+    transform:
+     rotate(-60deg)
+     scale(1.2)
+     perspective(80vw)
+     rotateY(10deg)
+     translate(5vw, 2vh)
+  } to {
+    opacity: 1;
+    text-shadow: none;
+    transform:
+     rotate(20deg)
+     scale(1)
+     perspective(100vw)
+     rotateY(0deg)
+     translate(0vw, 0vh)
   }
 }
