@@ -18,7 +18,7 @@ div#moly {
   word-wrap: break-word;
   position: relative;
   transform: rotate(20deg);
-  animation: molly 64s ease-in-out 45s infinite;
+  animation: moly 64s ease-in-out 45s infinite;
 }
 
 span {
@@ -28,25 +28,25 @@ span {
 
 span:nth-child(even) {
   animation:
-   aaaa-even 1.5s linear 0s 6,
-   aaaa-even 9s steps(9, end) 9s 1,
-   aaaa-even 3s cubic-bezier(1, 0.3, 0.8, 1) 18s 2,
-   aaaa-even 3s ease-out 24s 2,
-   aaaa-even 3s ease-in 30s 2,
-   aaaa-even 4s ease-in-out 36s infinite;
+   particle-even 1.5s linear 0s 6,
+   particle-even 9s steps(9, end) 9s 1,
+   particle-even 3s cubic-bezier(1, 0.3, 0.8, 1) 18s 2,
+   particle-even 3s ease-out 24s 2,
+   particle-even 3s ease-in 30s 2,
+   particle-even 4s ease-in-out 36s infinite;
 }
 
 span:nth-child(odd) {
   animation:
-   aaaa-odd 1.5s linear 0s 6,
-   aaaa-odd 9s steps(9, end) 9s 1,
-   aaaa-odd 3s cubic-bezier(1, 0.3, 0.8, 1)  18s 2,
-   aaaa-odd 3s ease-out 24s 2,
-   aaaa-odd 3s ease-in 30s 2,
-   aaaa-odd 4s ease-in-out 36s infinite;
+   particle-odd 1.5s linear 0s 6,
+   particle-odd 9s steps(9, end) 9s 1,
+   particle-odd 3s cubic-bezier(1, 0.3, 0.8, 1)  18s 2,
+   particle-odd 3s ease-out 24s 2,
+   particle-odd 3s ease-in 30s 2,
+   particle-odd 4s ease-in-out 36s infinite;
 }
  
-@keyframes aaaa-even {
+@keyframes particle-even {
   from  {
     top: 30vh;
     transform: rotate(360deg);
@@ -79,7 +79,7 @@ span:nth-child(odd) {
   }
 }
  
-@keyframes aaaa-odd {
+@keyframes particle-odd {
   from  {
     top: 60vh;
     transform: rotate(180deg);
@@ -112,25 +112,25 @@ span:nth-child(odd) {
   }
 }
 
-@keyframes molly {
+@keyframes moly {
   from {
     transform:
      rotate(20deg)
   } 20% {
     opacity: 0.9;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+    text-shadow: 0 0 6px #fff;
     transform:
      rotate(120deg)
      scale(.95)
   } 40% {
-    opacity: 0.6;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+    opacity: 0.75;
+    text-shadow: 0 0 6px #fff, 0 0 10px #fff;
     transform:
      rotate(200deg)
      scale(1)
   } 50% {
-    opacity: 0.8;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+    opacity: 0.9;
+    text-shadow: 0 0 6px #fff;
     transform:
      rotate(110deg)
      scale(1.2)
@@ -139,7 +139,7 @@ span:nth-child(odd) {
      translate(5vw, 2vh)
   } 60% {
     opacity: 0.9;
-    text-shadow: 0 0 5px #fff;
+    text-shadow: 0 0 6px #fff;
     transform:
      rotate(40deg)
      scale(1.1)
@@ -147,11 +147,11 @@ span:nth-child(odd) {
      rotateY(25deg)
      translate(15vw, 5vh)
   } 80% {
-    opacity: 0.9;
-    text-shadow: 0 0 5px #fff;
+    opacity: 1;
+    text-shadow: none;
     transform:
      rotate(-60deg)
-     scale(1.2)
+     scale(.9)
      perspective(80vw)
      rotateY(10deg)
      translate(5vw, 2vh)

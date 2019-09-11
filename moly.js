@@ -7,31 +7,30 @@ const { take } = rxjs.operators;
 class Moly extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { aaaarray: [] }; 
+    this.state = { particles: [] };
   }
 
   componentDidMount() {
     const bodyWidth = document.querySelector("body").offsetWidth;
-    interval(60)
-    .pipe(take(Math.floor(bodyWidth/10)))
-    .subscribe(key => {
-      const aaaarray = this.state.aaaarray;
-      aaaarray.push(aaaa(key));
-      this.setState({aaaarray});
-    })
+    const intervalValue = bodyWidth > 700 ? 45 : 80;
+    interval(intervalValue)
+      .pipe(take(Math.floor(bodyWidth / 10)))
+      .subscribe(key => {
+        this.setState({ particles: [...this.state.particles, particle(key)] })
+      })
   }
 
   render() {
     return e(
       'div',
       null,
-      this.state.aaaarray
+      this.state.particles
     );
   }
 }
 
-const aaaa = key => {
-  return e('span', {key}, 'a');
+const particle = key => {
+  return e('span', { key }, '@');
 }
 
 const domContainer = document.querySelector('#moly');
