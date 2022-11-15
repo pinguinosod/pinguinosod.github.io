@@ -1,0 +1,33 @@
+body {
+  font-family: monospace;
+  background-color: #000;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  min-height: 100vh;
+  font-weight: bold;
+  color: #fff;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  flex-grow: 1;
+  align-items: center;
+  justify-content:center;
+  text-align: center;
+  display: flex;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+}
+
+ul > li {
+  margin: 0 10px;
+}
